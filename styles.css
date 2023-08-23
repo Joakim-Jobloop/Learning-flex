@@ -8,15 +8,42 @@ body {
 }
 
 div.boxwrapper {
-
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
 }
 
 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
-    width: 100px;
+    width: 150px;
     margin: 20px;
     border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    opacity: 70%;
+}
+
+.box:hover {
+    scale: 110%;
+    opacity: 100%;
+}
+
+.box p {
     color: white;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.545);
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px inset black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.box p:active {
+    scale: 120%;
 }
 
 .box1 {
