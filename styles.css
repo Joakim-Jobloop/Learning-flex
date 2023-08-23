@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+
+}
+
+div.boxwrapper {
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border: 1px solid black;
+    color: white;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue; 
+}
+
+.box3 {
+    background-color: green;
+}
+
+.box4 {
+    background-color: yellow;
+}
+
+.box5 {
+    background-color: purple;
+}
