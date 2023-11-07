@@ -4,14 +4,20 @@
 }
 
 body {
-
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 div.boxwrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .box {
@@ -23,50 +29,71 @@ min-height: 100vh;
     margin: 20px;
     border: 1px solid black;
     box-shadow: 5px 5px 5px black;
-    opacity: 70%;
+    opacity: 0.7;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .box:hover {
-    scale: 110%;
-    opacity: 100%;
+    transform: scale(1.1); /* Use 'transform' property to scale */
+    opacity: 1;
 }
 
 .box p {
     color: white;
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.545);
-    border-radius: 100%;
+    border-radius: 50%; /* Make the border radius 50% for a circular shape */
     box-shadow: 5px 5px 5px inset black;
     cursor: pointer;
     user-select: none;
 }
 
 .box p:active {
-    scale: 120%;
+    transform: scale(1.2);
 }
 
 .box1 {
     background-color: red;
+    flex: 1; /* Example of using 'flex' property */
 }
 
 .box2 {
-    background-color: blue; 
+    background-color: blue;
+    flex: 2; /* Example of using 'flex' property with different value */
 }
 
 .box3 {
     background-color: green;
+    flex: 1.5;
 }
 
 .box4 {
     background-color: yellow;
+    flex: 2.5;
 }
 
 .box5 {
     background-color: purple;
+    flex: 1.2;
 }
 
 .flextest {
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Additional styles for demonstration purposes */
+body:before {
+    content: "Flexbox Examples";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.flextest .box {
+    width: 150px;
+    height: 200px;
+    border: 2px solid #333;
 }
